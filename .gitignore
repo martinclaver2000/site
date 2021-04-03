@@ -1,2 +1,6 @@
 /vendor/bootstrap/scss/
-/vendor/fontawesome-free/
+/vendor/fontawesome-free/scss/
+/vendor/fontawesome-free/metadata/
+/vendor/fontawesome-free/attribution.js
+/vendor/fontawesome-free/LICENSE.txt
+/vendor/fontawesome-free/package.json
