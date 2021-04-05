@@ -10,19 +10,16 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="../logos/favicon.ico" />
 
-    <title>Monbedou | Apis</title>
+    <title>Monbedou | Wallets</title>
 
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template-->
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this page -->
-    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -144,11 +141,9 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <form class="form-inline">
-                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </form>
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
                     <!-- Topbar Search -->
                     <form
@@ -366,23 +361,77 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">APIs documentation</h1>
+                        <h1 class="h3 mb-0 text-gray-800">User Profile</h1>
                     </div>
-                    <div>For work with the API you need to download the PHP class at the link below!</div>
-                    <div><a href="#"><i class="fas fa-2x fa-file-download m-3"></i>DOWNLOAD</a></div>
-                    <div>Authorization</div>
 
-                    <div>Check balance</div>
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <form action="" method="post">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Full name</label>
+                                    <input type="text" class="form-control" id="full_name" value="" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Gender</label>
+                                    <input type="text" class="form-control" id="gender" value="" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Country</label>
+                                    <input type="text" class="form-control" id="country" value="" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                                    <input type="text" class="form-control" id="phone" value="" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" value="">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="submit" class="form-control btn btn-primary" id="wallet"
+                                        value="save change">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xl-4">
+                            <form action="" method="post">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Orange CI</label>
+                                    <input type="number" class="form-control" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Moov CI</label>
+                                    <input type="number" class="form-control" disabled>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Orange BF</label>
+                                    <input type="number" class="form-control" disabled>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xl-4">
+                            <form action="" method="post">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Old password</label>
+                                    <input type="password" class="form-control" id="country">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">New password</label>
+                                    <input type="password" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Confirm password</label>
+                                    <input type="password" class="form-control" id="email">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="submit" class="form-control btn btn-primary" id="wallet"
+                                        value="save change">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-                    <div>Check a wallet</div>
-
-                    <div>Checking possiblity of payout</div>
-
-                    <div>payout</div>
-
-                    <div>invoice</div>
-
-                    <div>Api merchant</div>
                 </div>
                 <!-- /.container-fluid -->
 
@@ -429,6 +478,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>
